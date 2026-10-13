@@ -22,5 +22,9 @@ class Store:
         self.products.remove(product)
 
     def list_products(self):
+        print ("\n-----\nProducts in store:")
+        num = 0
         for product in self.products:
-            print(f"{product.name} - ${product.price} - Quantity: {product.quantity}")
+            num += 1
+            print(f"{num}. {product.name} - ${product.price} - Quantity: {product.quantity}")
+        print ("-----")
